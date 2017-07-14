@@ -1,0 +1,25 @@
+{
+  "name": "boilerplate",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "budo index.js --live"
+  },
+  "browserify": {
+    "transform": [
+      "lessify",
+      "babelify"
+    ]
+  },
+  "private": true,
+  "dependencies": {
+    "babel-plugin-transform-decorators-legacy": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babelify": "*",
+    "browserify": "*",
+    "budo": "*",
+    "lessify": "^1.0.1",
+    "semistandard": "^11.0.0"
+  }
+}
