@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "budo index.js --live"
+    "start": "node server.js"
   },
   "browserify": {
     "transform": [
@@ -13,12 +13,15 @@
   },
   "private": true,
   "dependencies": {
+    "babel-core": "^6.26.0",
     "babel-plugin-transform-decorators-legacy": "*",
     "babel-preset-es2015": "*",
     "babel-preset-react": "*",
     "babelify": "*",
     "browserify": "*",
+    "browserify-middleware": "^8.0.0",
     "budo": "*",
+    "express": "^4.16.2",
     "lessify": "^1.0.1",
     "semistandard": "^11.0.0"
   }
